@@ -1,1 +1,15 @@
-{"name":"Portal do Sindicato — React","image":"mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm","forwardPorts":[5173],"portsAttributes":{"5173":{"label":"Portal React","onAutoForward":"openPreview"}},"postCreateCommand":"npm ci"}
+{
+  "name": "Portal do Sindicato — React",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "forwardPorts": [
+    5173
+  ],
+  "portsAttributes": {
+    "5173": {
+      "label": "Portal React",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "postCreateCommand": "npm ci",
+  "postStartCommand": "nohup npm run dev > /tmp/portal-vite.log 2>&1 &"
+}

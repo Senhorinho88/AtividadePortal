@@ -15,11 +15,12 @@ Abra a URL informada pelo Vite (normalmente http://localhost:5173).
 
 ## GitHub Codespaces
 
-1. Envie os arquivos desta pasta, incluindo `.devcontainer`, para um repositório no GitHub.
-2. No repositório, selecione **Code → Codespaces → Create codespace on main**.
-3. Aguarde o contêiner instalar as dependências via `npm ci`.
-4. No terminal do Codespace, execute `npm run dev`.
-5. Abra a porta **5173** na aba **Ports**.
+1. Abra https://github.com/Senhorinho88/AtividadePortal.
+2. Selecione **Code → Codespaces → Create codespace on main**.
+3. Aguarde o contêiner instalar as dependências via `npm ci` e iniciar o Vite automaticamente.
+4. Na aba **Ports**, abra a porta **5173** pelo ícone de globo para visualizar o portal.
+
+Se o servidor não estiver rodando, execute `npm run dev` no terminal. O log da inicialização automática fica em `/tmp/portal-vite.log`.
 
 A configuração está preparada para Codespaces. O desenvolvimento e a validação desta versão ocorreram no ambiente local da sessão; não foi criado um Codespace.
 
@@ -51,4 +52,3 @@ Os testes verificam a exclusividade do acordeão, a troca das abas, o filtro dos
 - `npm test`: 4 testes aprovados.
 - `npm run build`: compilação de produção concluída.
 - Aparência em navegador e execução real no GitHub Codespaces: não verificadas neste ambiente.
-- Publicação online não realizada: os scripts locais exigidos pelo fluxo do Sites não estão disponíveis neste ambiente.
